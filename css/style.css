@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+}
+header {
+  color: white;
+  background: none;
+}
+
+.main-section {
+  background-image: url(../img/home-1.14c0d866.jpg);
+  height: calc(100vh - 76px);
+}
+
+.nav-link:hover,
+.login-text:hover {
+  color: #ff6347;
+}
+.add-property-text {
+  color: #ff6347;
+  border: 1px solid #ff6347;
+}
+.add-property-text:hover {
+  color: white;
+  background-color: #ff6347;
+}
+.mobile > .fa-circle-user {
+  vertical-align: text-top;
+}
+
+.list-card:hover{
+    color: white;
+    background: #000;
+}
+
+.feature-label{
+    background-color: #ff6347;
+}
+
+.review{
+  background-color: #EB675312;
+}

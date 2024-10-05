@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Homeo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Fav-icon -->
+  <link rel="shortcut icon" href="./img/fav-icon.svg" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons   -->
+  <script src="https://kit.fontawesome.com/d8129a5809.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/'>
+
+
+
+</head>
+
+<body>
+  <header class="header bg-white text-black sticky top-0 w-[100%] z-50">
+    <div class="header-container container w-11/12 xl:w-4/5 mx-auto flex  py-5 items-center justify-between ">
+      <div class="menu-icon lg:hidden">
+        <span class="mobile"><i class="fa-regular fa-circle-user text-xl sm:text-2xl"></i></span> <!-- Menu Icon -->
+      </div>
+      <div class="logo-section flex items-center">
+        <picture class="logo-img">
+          <img src="./img/logo (2).png" alt="Logo" class="w-[25px] sm:w-9">
+        </picture>
+        <h2 class="site-title sm:text-2xl md:text-3xl text-xl  pl-2 ">Homeo</h2>
+      </div>
+
+      <nav
+        class="main-nav   lg:w-auto lg:max-w-none hidden lg:h-auto lg:flex-row lg:static lg:flex  absolute  top-0 left-0 h-[100vh]  flex-col justify-center items-center max-w-xs w-11/12 lg:w-4/5">
+        <ul class="nav-list lg:flex-row flex gap-7  font-medium text-sm  flex-col font-medium border-r border-black pr-4">
+          <li class="nav-item"><a href="#go-1" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#go-2" class="nav-link">properties</a></li>
+          <li class="nav-item"><a href="#go-3" class="nav-link">reviews</a></li>
+          <li class="nav-item"><a href="#go-4" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#go-5" class="nav-link">Pages</a></li>
+        </ul>
+        <div class="user-section flex items-center gap-5 font-medium text-sm pl-4">
+          <div class="login-register hidden lg:inline-block">
+            <span class="login-text cursor-pointer"><i class="fa-regular fa-circle-user"></i> Login / Register</span>
+            <!-- User Icon -->
+          </div>
+          <div class="add-property ">
+            <span
+              class="add-property-text border rounded-[5px]  px-5 py-2  cursor-pointer font-medium text-sm flex items-center">Add
+              Property <i class="fa-solid fa-arrow-up-right-from-square pl-2 text-xs"></i></span> <!-- Upload Icon -->
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="menu-icon lg:hidden">
+        <span><img src="./img/menu.png" class="w-[20px] sm:w-7"></img></span> 
+      </div>
+    </div>
+  </header>
+  <main class="main pb-10 lg:pb-20" id="go-1">
+    <section class="main-section bg-cover bg-center">
+      <div class="container w-11/12 lg:w-4/5 h-[100%] mx-auto flex flex-col justify-center items-center gap-y-5 lg:gap-12">
+        <div class="text-white text-center flex flex-col gap-y-5 lg:gap-6">
+          <p class="text-sm sm:text-sm">THE BEST WAY TO</p>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold">Find Your Dream Home</h2>
+          <p class="text-sm sm:text-base">We’ve more than 745,000 apartments, place &amp; plot.</p>
+        </div>
+
+        <div class="cta-section max-w-[800px] w-[100%]">
+          <ul class="flex gap-x-4 sm:gap-x-6 bg-white w-fit p-5  rounded-t border-b">
+            <li><a href="" class="cta-link text-sm font-medium">All</a></li>
+            <li><a href="" class="cta-link text-sm font-medium">for Rent</a></li>
+            <li><a href="" class="cta-link text-sm font-medium">for Sell</a></li>
+          </ul>
+
+          <div
+            class="search-section bg-white flex flex-wrap p-7  gap-3 sm:gap-5 max-w-[1200px] items-center rounded-b rounded-r">
+            <span class=" bg-gray-200 p-3 rounded flex-grow flex flex-nowrap items-center">
+              <i class="fa-solid fa-house search-icon text-gray-400 pr-2"></i>
+              <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code for Buy"
+                class=" bg-gray-200 w-11/12 lg:w-4/5 outline-none text-sm">
+            </span>
+            <div class="filter">
+              <span class="text-base">
+                <i class="fa-solid fa-sliders filter-icon pr-2 "></i> <span>Advanced</span>
+              </span>
+              <span class="pl-3">
+                <i class="fa-solid fa-magnifying-glass search-icon bg-yellow-500 rounded-[50%] p-3"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="listing " id="go-2">
+      <div class="container w-11/12 lg:w-4/5 mx-auto py-10 md:py-24 flex flex-col gap-10">
+        <div class="relative">
+          <h2 class="text-2xl font-bold pb-1">Explore apatment type</h2>
+          <p class="text-sm text-gray-400 pt-1">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="flex justify-start  flex-wrap gap-5">
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10    min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/apartment.svg" class="w-[50px]" alt="apartment-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">apartment</h1>
+              <p class="text-sm text-gray-500">4 Properties</p>
+            </div>
+          </div>
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10  min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/villa.svg" class="w-[50px]" alt="villa-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">villa</h1>
+              <p class="text-sm text-gray-500 villa ">7 Properties</p>
+            </div>
+          </div>
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10    min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/houses.svg" class="w-[50px]" alt="houses-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">Houses</h1>
+              <p class="text-sm text-gray-500">10 Properties</p>
+            </div>
+          </div>
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10    min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/office.svg" class="w-[50px]" alt="offices-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">office</h1>
+              <p class="text-sm text-gray-500">3 Properties</p>
+            </div>
+          </div>
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10    min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/cartridge.svg" class="w-[50px]" alt="cartridge-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">cartridge</h1>
+              <p class="text-sm text-gray-500">4 Properties</p>
+            </div>
+          </div>
+          <div class="list-card flex flex-col items-center bg-gray-100 w-fit rounded p-10    min-w-[200px] flex-grow gap-4">
+            <div class="w-[100px] h-[100px] bg-white rounded-[50%] grid place-items-center">
+              <img src="./img/furnished.svg" class="w-[50px]" alt="furnished-img">
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-semibold text-center">furnished</h1>
+              <p class="text-sm text-gray-500">5 Properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Properties-area">
+      <div class="container w-11/12 lg:w-4/5 mx-auto py-10 flex flex-col">
+        <div >
+          <h2 class="text-xl font-semibold pb-1 text-center">see how realtor can help</h2>
+          <p class="text-sm text-gray-400 pt-1 text-center">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-10 gap-y-10 justify-center">
+          <div class="text-center flex flex-col items-center hover:shadow-2xl  shadow-md rounded p-7 gap-5">
+            <img src="./img/home-1.svg" alt="home-img-1" class="w-[25%] lg:w-[50%]">
+            <h2 class="text-xl  font-semibold">buy a property</h2>
+            <p class="text-sm text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, harum.</p>
+            <h3 class="text-sm font-semibold border border-black rounded px-5 py-2 cursor-pointer hover:bg-black hover:text-white">find a home<i class="fa-solid fa-arrow-up-right-from-square pl-2"></i></h3>
+          </div>
+          <div class="text-center flex flex-col items-center hover:shadow-2xl  shadow-md rounded p-7 gap-5">
+            <img src="./img/home-2.svg" alt="home-img-2" class="w-[25%] lg:w-[50%]">
+            <h2 class="text-xl  font-semibold">Sell a property</h2>
+            <p class="text-sm text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, harum.</p>
+            <h3 class="text-sm font-semibold border border-black rounded px-5 py-2 cursor-pointer hover:bg-black hover:text-white">place an ad<i class="fa-solid fa-arrow-up-right-from-square pl-2"></i></h3>
+          </div>
+          <div class="text-center flex flex-col items-center hover:shadow-2xl  shadow-md rounded p-7 gap-5">
+            <img src="./img/home-3.svg" alt="home-img-3" class="w-[25%] lg:w-[50%]">
+            <h2 class="text-xl  font-semibold">rent a property</h2>
+            <p class="text-sm text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, harum.</p>
+            <h3 class="text-md font-semibold border border-black rounded px-5 py-2 cursor-pointer hover:bg-black hover:text-white">find a rental<i class="fa-solid fa-arrow-up-right-from-square pl-2"></i></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container w-11/12 lg:w-4/5 mx-auto py-10 lg:py-20 flex flex-col gap-10">
+        <div >
+          <h2 class="text-xl font-semibold pb-1 text-center">Discover our features listing</h2>
+          <p class="text-sm text-gray-400 pt-1 text-center">Lorem ipsum dolor sit amet.</p>
+        </div>
+      
+      <div class="flex justify-center flex-wrap lg:flex-nowrap gap-5">
+        <div class="flex flex-col min-w-[250px] hover:shadow-2xl">
+          <div class="relative">
+            <img src="./img/property-1.jpg" alt="property-img" class="border rounded-t-lg">
+            <p class="absolute top-[15px] left-[15px] text-white px-3 py-2 rounded text-sm font-medium feature-label">featured</p>
+            <p class="absolute bottom-[15px] left-[15px] bg-white px-3 py-2 rounded text-sm font-medium">$5800</p>
+          </div>
+          <div class="flex flex-col py-6 px-4 gap-5 border-r border-l">
+            <h2 class="font-semibold">quality house for sale</h2>
+            <p class="text-gray-500 text-sm">canada</p>
+            <ul class="flex text-gray-500 text-xs gap-5">
+              <li><i class="fa-solid fa-bed pr-1"></i>9 beds</li>
+              <li><i class="fa-solid fa-bath pr-1"></i>2 bath</li>
+              <li><i class="fa-solid fa-maximize pr-1"></i>600 sqrt</li>
+            </ul>
+          </div>
+          <div class="flex border-t p-4 text-gray-500 text-sm border rounded-b-lg">
+            <p class="flex-grow">for sale</p>
+            <ul class="flex gap-6">
+              <li><i class="fa-solid fa-up-right-from-square"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-regular fa-square-plus"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col min-w-[250px] hover:shadow-2xl">
+          <div class="relative">
+            <img src="./img/property2.jpg" alt="property-img" class="border rounded-t-lg">
+            <p class="absolute top-[15px] left-[15px] text-white px-3 py-2 rounded text-sm font-medium feature-label">featured</p>
+            <p class="absolute bottom-[15px] left-[15px] bg-white px-3 py-2 rounded text-sm font-medium">$46000</p>
+          </div>
+          <div class="flex flex-col py-6 px-4 gap-5 border-r border-l">
+            <h2 class="font-semibold">confortable villas</h2>
+            <p class="text-gray-500 text-sm">new york</p>
+            <ul class="flex text-gray-500 text-xs gap-5">
+              <li><i class="fa-solid fa-bed pr-1"></i>7 beds</li>
+              <li><i class="fa-solid fa-bath pr-1"></i>3 bath</li>
+              <li><i class="fa-solid fa-maximize pr-1"></i>1000 sqrt</li>
+            </ul>
+          </div>
+          <div class="flex border-t p-4 text-gray-500 text-sm border rounded-b-lg">
+            <p class="flex-grow">for rent</p>
+            <ul class="flex gap-6">
+              <li><i class="fa-solid fa-up-right-from-square"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-regular fa-square-plus"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col min-w-[250px] hover:shadow-2xl">
+          <div class="relative">
+            <img src="./img/property-3.jpg" alt="property-img" class="border rounded-t-lg">
+            <p class="absolute top-[15px] left-[15px] text-white px-3 py-2 rounded text-sm font-medium feature-label">featured</p>
+            <p class="absolute bottom-[15px] left-[15px] bg-white px-3 py-2 rounded text-sm font-medium">$3800</p>
+          </div>
+          <div class="flex flex-col py-6 px-4 gap-5 border-r border-l">
+            <h2 class="font-semibold">quality house for sale</h2>
+            <p class="text-gray-500 text-sm">canada</p>
+            <ul class="flex text-gray-500 text-xs gap-5">
+              <li><i class="fa-solid fa-bed pr-1"></i>5 beds</li>
+              <li><i class="fa-solid fa-bath pr-1"></i>3 bath</li>
+              <li><i class="fa-solid fa-maximize pr-1"></i>500 sqrt</li>
+            </ul>
+          </div>
+          <div class="flex border-t p-4 text-gray-500 text-sm border rounded-b-lg">
+            <p class="flex-grow" >for sale</p>
+            <ul class="flex gap-6">
+              <li><i class="fa-solid fa-up-right-from-square"></i></li>
+              <li><i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-regular fa-square-plus"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="review" id="go-3">
+      <div class="container w-11/12 lg:w-4/5 mx-auto flex-wrap lg:flex-nowrap items-end py-5 lg:py-20 ">
+        <div class="flex flex-col reviews gap-2">
+          <h2 class="text-xl lg:text-2xl font-semibold">peolpe love living with homeo</h2>
+          <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="flex py-5 lg:py-10 gap-3 flex-wrap xl:flex-nowrap">
+          <div class="flex flex-col gap-5 p-5 border rounded-xl bg-white md:basis-[calc(50%_-_12px)] hover:shadow-xl basis-full">
+            <h3 class="text-base font-semibold flex items-center ">great work<i class="fa-solid fa-quote-right text-right text-2xl  ml-auto " style="color: #fce8e5;"></i></h3>
+            <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et”</p>
+            <span class="text-xs"><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star-half-stroke" style="color: #ec9d0b;"></i></span>
+            <div class="flex gap-5 border-t pt-5">
+              <img src="./img/reviewer-1.jpg" alt="reviewer-img" class="w-[50px] h-[50px] rounded-[50%]">
+              <div>
+                <h2 class="font-semibold">Marvin mckinney</h2>
+                <p class="text-sm text-gray-500">marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 p-5 border rounded-xl bg-white md:basis-[calc(50%_-_12px)] hover:shadow-xl basis-full">
+            <h3 class="text-base font-semibold flex items-center">great work<i class="fa-solid fa-quote-right text-right text-2xl  ml-auto" style="color: #fce8e5;"></i></h3>
+            <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et”</p>
+            <span class="text-xs"><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star-half-stroke" style="color: #ec9d0b;"></i></span>
+            <div class="flex gap-5 border-t pt-5">
+              <img src="./img/reviewer-2.jpg" alt="reviewer-img" class="w-[50px] h-[50px] rounded-[50%]">
+              <div>
+                <h2 class="font-semibold">sam</h2>
+                <p class="text-sm text-gray-500">marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 p-5 border rounded-xl bg-white md:basis-[calc(50%_-_12px)] hover:shadow-xl basis-full">
+            <h3 class="text-base font-semibold flex items-center">great work<i class="fa-solid fa-quote-right text-right text-2xl  ml-auto" style="color: #fce8e5;"></i></h3>
+            <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et”</p>
+            <span class="text-xs"><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star-half-stroke" style="color: #ec9d0b;"></i></span>
+            <div class="flex gap-5 border-t pt-5">
+              <img src="./img/reviewer-3.jpg" alt="reviewer-img" class="w-[50px] h-[50px] rounded-[50%]">
+              <div>
+                <h2 class="font-semibold">kemi</h2>
+                <p class="text-sm text-gray-500">marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 p-5 border rounded-xl bg-white md:basis-[calc(50%_-_12px)] hover:shadow-xl basis-full">
+            <h3 class="text-base font-semibold flex items-center">great work<i class="fa-solid fa-quote-right text-right text-2xl  ml-auto" style="color: #fce8e5;"></i></h3>
+            <p class="text-sm font-semibold">“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et”</p>
+            <span class="text-xs"><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star" style="color: #ec9d0b;"></i><i class="fa-solid fa-star-half-stroke" style="color: #ec9d0b;"></i></span>
+            <div class="flex gap-5 border-t pt-5" >
+              <img src="./img/reviewer-4.jpg" alt="reviewer-img" class="w-[50px] h-[50px] rounded-[50%]">
+              <div>
+                <h2 class="font-semibold">Max</h2>
+                <p class="text-sm text-gray-500">marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="blog" id="go-4">
+      <div class="container w-11/12 lg:w-4/5 mx-auto py-10 lg:py-20">
+        <div class="flex flex-col reviews text-center gap-2">
+          <h2 class="text-xl lg:text-2xl font-semibold">from our blog</h2>
+          <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="pt-5 lg:pt-10 flex gap-5 flex-wrap justify-center md:justify-start">
+            <div class=" md:basis-[calc(50%_-_20px)] lg:basis-[calc(33.3%_-_20px)] ">
+              <div class="relative w-fit ">
+                <img src="./img/blog-1.webp" alt="blog-img" class="border rounded-md">
+                <div class="flex flex-col p-3 border rounded-lg w-fit text-center absolute bottom-[-35px] right-[15px] bg-white"><span>july</span><span>28</span></div>
+              </div>
+              <div class="flex flex-col gap-2 pt-2">
+                <p class="text-gray-400 text-sm">living room</p>
+                <h5 class="text-sm font-semibold pr-10">private contemporary home balancing openness</h5>
+              </div>
+            </div>
+            <div class=" md:basis-[calc(50%_-_20px)] lg:basis-[calc(33.3%_-_20px)]">
+              <div class="relative w-fit ">
+                <img src="./img/blog-2.jpg" alt="blog-img" class="border rounded-md">
+                <div class="flex flex-col p-3 border rounded-lg w-fit text-center absolute bottom-[-35px] right-[15px] bg-white"><span>july</span><span>28</span></div>
+              </div>
+              <div class="flex flex-col gap-2 pt-2">
+                <p class="text-gray-400 text-sm">living room</p>
+                <h5 class="text-sm font-semibold pr-10">Contemporary Home Private Balancing Openness</h5>
+              </div>
+            </div>
+            <div class=" md:basis-[calc(50%_-_20px)] lg:basis-[calc(33.3%_-_20px)]">
+              <div class="relative w-fit ">
+                <img src="./img/blog-3.webp" alt="blog-img" class="border rounded-md">
+                <div class="flex flex-col p-3 border rounded-lg w-fit text-center absolute bottom-[-35px] right-[15px] bg-white"><span>july</span><span>28</span></div>
+              </div>
+              <div class="flex flex-col gap-2 pt-2">
+                <p class="text-gray-400 text-sm">living room</p>
+                <h5 class="text-sm font-semibold pr-10">Balancing Private Contemporary Home Openness</h5>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="sponsored bg-gray-100">
+      <div class="container w-11/12 lg:w-4/5 mx-auto py-20 flex flex-wrap gap-y-10 items-center justify-between">
+        <div>
+          <h3 class="font-semibold text-xl pb-5">Need help? Talk to our expert.</h3>
+          <p class="text-sm">Talk to our experts or Browse through more properties.</p>
+        </div>
+        <div>
+          <span class="border border-black rounded-lg p-3 mr-5 hover:bg-black hover:text-white">contact us<i class="fa-solid fa-arrow-left-long fa-rotate-by ml-2" style="--fa-rotate-angle: 125deg;"></i></span>
+          <span class="border border-black rounded-lg p-3 mr-5 bg-black text-white hover:bg-white hover:text-black" ><i class="fa-solid fa-phone pr-2"></i>9876543210</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black text-white pt-10" id="go-5">
+    <h2 class="text-center text-2xl font-simebold underline py-5">support us</h2>
+    <div class="container w-11/12 lg:w-4/5 mx-auto py-10 flex justify-start flex-wrap gap-10 lg:justify-around">
+      
+      <div class="flex-grow basis-full md:basis-0">
+        <div class="flex flex-col gap-4 pb-8">
+          <h3 class="font-semibold pb-4">Apps</h3>
+          <ul class="flex gap-5 xl:flex-nowrap flex-wrap">
+            <li><div class="flex gap-4  bg-[#212329] hover:bg-[#ff6347] hover:border w-[200px] items-center px-4 py-3 rounded-lg ">
+              <span><i class="fa-brands fa-apple text-3xl" style="color: #fafafa;"></i></span>
+            <div>
+              <p class="text-xs text-gray-400 pb-1">Download on the</p>
+              <h4 class="text-sm">apple store</h4>
+            </div>
+          </div>
+        </li>
+          <li>
+            <div class="flex gap-4  bg-[#ff6347] hover:bg-[#212329] hover:border-[#ff6347] border w-[200px] items-center px-4 py-3 rounded-lg">
+            <span><i class="fa-brands fa-google-play text-2xl" style="color: #fafafa;"></i></span>
+            <div>
+            <p class="text-xs text-gray-400 pb-1">get it on</p>
+            <h4 class="text-sm">google play</h4>
+          </div>
+        </div>
+      </li>
+    </ul>
+        </div>
+        <div >
+          <h3 class="font-semibold pb-8">follow us</h3>
+          <ul class="text-sm text-gray-400 flex gap-8">
+            <li><i class="fa-brands fa-facebook-f "></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-grow ">
+        <h3 class="font-semibold pb-8">popular search</h3>
+        <ul class="text-xs text-gray-400 flex flex-col gap-4">
+          <li>Apratment for rent</li>
+          <li>apartment low to hide</li>
+          <li>offices for buy</li>
+          <li>offices for rent</li>
+        </ul>
+      </div>
+      <div class="flex-grow ">
+        <h3 class="font-semibold pb-8">quick link</h3>
+        <ul class="text-xs text-gray-400 flex flex-col gap-4">
+          <li>terms of use</li>
+          <li>privacy policy</li>
+          <li>pricing plans</li>
+          <li>our services</li>
+          <li>contact support</li>
+          <li>careers</li>
+          <li>faqs</li>
+        </ul>
+      </div>
+      <div class="flex-grow ">
+        <h3 class="font-semibold pb-8">discover</h3>
+        <ul class="text-xs text-gray-400 flex flex-col gap-4">
+          <li>miami</li>
+          <li>los angeles</li>
+          <li>chicago</li>
+          <li>new york</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t">
+    <div class="w-4/5 mx-auto   flex justify-center sm:justify-between flex-wrap text-sm text-gray-400 py-3 lg:py-5 gap-5 text-center items-center">
+     <p >&#169;Homeo 2024-all rights reserved</p>
+     <p>privacy.Term.sitemap</p>
+    </div>
+  </div>
+  </footer>
+</body>
+
+</html>
